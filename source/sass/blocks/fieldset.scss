@@ -1,0 +1,47 @@
+.fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.fieldset__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.fieldset__title {
+  padding: 0;
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: #63d1bb;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.fieldset__title::after {
+  content: "";
+  width: 200px;
+  height: 1px;
+  background-color: #63d1bb;
+  margin-left: 20px;
+}
+
+.fieldset textarea {
+  margin-top: 22px;
+  padding: 15px;
+  border: 2px solid #444444;
+}
+
+.fieldset__item {
+  padding-bottom: 10px;
+}
+
+.checkbox .fieldset__item {
+  padding-bottom: 23px;
+}
