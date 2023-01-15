@@ -4,13 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>Магазин игрушек «Мишка»</title>
 </head>
 
 <body class="body">
-  <header class="main-header wrapper">
+
+  <header class="main-header">
     <a class="main-header__logo">
       <img class="main-header__logo-image" src="img/mishka-logo-mobile.svg" alt="Логотип «Мишка»." width="149"
         height="72">
@@ -76,13 +77,14 @@
   </header>
 
   <main class="main-container">
-    <h1 class="main-container__title">Милые штуки ручной работы для дома</h1>
+    <h1 class="visually-hidden">Главная страница магазина игрушек «Мишка»</h1>
 
-    <section class="hero wrapper">
-      <h2 class="visually-hidden">Милые штуки ручной работы для дома</h2>
+    <section class="hero">
+      <div class="wrapper">
+      <h2 class="hero__title">Милые штуки ручной  работы для дома</h2>
       <ul class="hero__list">
         <li class="hero__item">
-          <a class="hero__link" href="#">
+          <a class="hero__link hero__link--interior" href="#">
             <span class="hero__link-text">
               Предметы интерьера
             </span>
@@ -90,7 +92,7 @@
         </li>
 
         <li class="hero__item">
-          <a class="hero__link" href="#">
+          <a class="hero__link hero__link--toys" href="#">
             <span class="hero__link-text">
               Детские игрушки
             </span>

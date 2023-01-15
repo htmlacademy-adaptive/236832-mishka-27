@@ -1,9 +1,13 @@
 // Начните писать стили здесь
-@import "./fonts/fonts.scss";
+@import "./global/fonts.scss";
+@import "./global/visually-hidden.scss";
+@import "./global/variables.scss";
+@import "./global/common.scss";
+@import "./blocks/main-header.scss";
 @import "./blocks/body.scss";
 @import "./blocks/button.scss";
 @import "./blocks/header.scss";
-@import "./blocks/main.scss";
+@import "./blocks/main-container.scss";
 @import "./blocks/products.scss";
 @import "./blocks/product.scss";
 @import "./blocks/blog.scss";

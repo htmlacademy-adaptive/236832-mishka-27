@@ -1,0 +1,18 @@
+.main-container__title {
+  margin: 0;
+  padding: 20px 0;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  background-color: $grey;
+  min-height: 176px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
