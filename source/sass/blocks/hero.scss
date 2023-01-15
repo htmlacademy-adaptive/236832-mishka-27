@@ -1,0 +1,25 @@
+.hero {
+  margin-bottom: 30px;
+}
+
+.hero__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.hero__link {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  color: #ffffff;
+  padding: 24px 30px 30px;
+  display: block;
+  background: #63d1bb;
+  text-decoration: none;
+}
+
+.hero__link-text {
+  width: 150px;
+  display: block;
+}
