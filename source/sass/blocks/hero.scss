@@ -28,7 +28,7 @@
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
-    min-height: 526px;
+    min-height: 426px;
     padding: 154px 50px 0;
   }
 
@@ -45,6 +45,14 @@
   padding: 0;
   margin: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    max-width: 1150px;
+    margin: 0 auto;
+  }
 }
 
 .hero__link {
@@ -79,9 +87,25 @@
   &--toys::after {
     background-image: url("../img/icons/toys.svg");
   }
+
+  &--toys {
+    background-color: $darken-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 35px 35px 35px;
+  }
 }
 
 .hero__link-text {
   width: 150px;
   display: block;
+}
+
+.hero__item {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
