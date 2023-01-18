@@ -1,6 +1,6 @@
 .stats {
   margin-top: 36px;
-  margin-bottom: 56px;
+  margin-bottom: 58px;
 }
 
 .stats__title {
@@ -8,18 +8,99 @@
   font-size: 25px;
   line-height: 30px;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    padding-left: 225px;
+  }
 }
 
 .stats__list {
   padding: 0;
   margin: 0;
   list-style: none;
+  row-gap: 50px;
+  column-gap: 155px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 225px;
+  }
 }
 
 .stats__item {
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
+
   margin-bottom: 30px;
-  max-width: 250px;
+  max-width: 245px;
+
+  &::before {
+    content: "";
+    width: 55px;
+    height: 38px;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: -4px;
+    margin-bottom: 16px;
+    display: block;
+  }
+
+  &--price {
+    order: 3;
+  }
+
+  &--like {
+    order: 5;
+  }
+
+  &--made {
+    order: 2;
+  }
+
+  &--support {
+    order: 4;
+  }
+
+  &--present {
+    order: 6;
+  }
+}
+
+.stats__item--materials::before {
+  background-image: url("../../img/icons/stats-icons/stats-materials.svg");
+}
+
+.stats__item--price::before {
+  background-image: url("../../img/icons/stats-icons/stats-price.svg");
+}
+
+.stats__item--like::before {
+  background-image: url("../../img/icons/stats-icons/stats-likes.svg");
+}
+
+.stats__item--made::before {
+  background-image: url("../../img/icons/stats-icons/stats-made.svg");
+}
+
+.stats__item--present::before {
+  background-image: url("../../img/icons/stats-icons/stats-present.svg");
+}
+
+.stats__item--support::before {
+  background-image: url("../../img/icons/stats-icons/stats-support.svg");
 }

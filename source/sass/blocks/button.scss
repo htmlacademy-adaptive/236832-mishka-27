@@ -9,4 +9,18 @@
   background-color: #ffffff;
   text-decoration: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    background-color: $extra-dark;
+    color: $basic-white;
+  }
+
+  &:active {
+    color: rgba($basic-white, 0.3);
+  }
 }

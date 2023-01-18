@@ -2,6 +2,12 @@
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 .reviews__item {
@@ -30,4 +36,30 @@
   font-weight: 400;
   display: block;
   margin-top: 6px;
+}
+
+.reviews__list {
+  margin-bottom: 30px;
+}
+
+.reviews__buttons {
+  margin: 0 auto;
+  width: max-content;
+  margin-bottom: 36px;
+  display: flex;
+}
+
+.reviews__button {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.reviews__toggle {
+  border-radius: 0;
+  background-color: transparent;
+  padding: 13px 38px;
+  outline: none;
+  font-family: inherit;
+  cursor: pointer;
+  border: 1px solid $border-color;
 }
