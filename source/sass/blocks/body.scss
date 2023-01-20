@@ -10,10 +10,14 @@
 .wrapper {
   padding-right: 30px;
   padding-left: 30px;
+  max-width: 260px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding-right: 50px;
     padding-left: 50px;
+    max-width: 668px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {

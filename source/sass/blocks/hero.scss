@@ -5,7 +5,6 @@
   background-position-x: center;
   background-position-y: -20px;
 
-
   @media (min-width: $tablet-width) {
     background-image: url("../img/hero-tablet.jpg");
     background-position-y: -20px;
@@ -21,7 +20,7 @@
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
-  padding: 73px 30px 120px 30px;
+  padding: 73px 5px 120px 5px;
   text-align: center;
   min-height: 60px;
 
@@ -50,6 +49,8 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 

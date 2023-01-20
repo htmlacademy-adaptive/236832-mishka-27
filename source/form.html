@@ -53,17 +53,15 @@
     <h1 class="main-container__title">Вязание на заказ</h1>
 
     <section class="order">
-
-      <h2 class="visually-hidden">Форма заказа</h2>
-        <p class="order__description wrapper">
+      <div class="wrapper">
+      <h2 class="order__title visually-hidden">Форма заказа</h2>
+        <p class="order__description">
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
           уточнить детали.
         </p>
-
-      <!-- Запутался в нейминге -->
-
-      <form class="order__form wrapper" action="https://echo.htmlacademy.ru/" method="get">
+      <form class="order__form" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="order-form__fieldset fieldset">
+          <div class="form__element">
           <legend class="fieldset__title">Тип</legend>
           <ul class="fieldset__list">
             <li class="fieldset__item">
@@ -78,6 +76,8 @@
                 <span class="control__label">Детская игрушка</span>
               </label>
             </li>
+          </ul>
+          </div>
         </fieldset>
 
         <fieldset class="order-form__fieldset fieldset">
@@ -173,7 +173,7 @@
 
         <button class="order-form__confirm-button button" type="submit">Отправить заказ</button>
       </form>
-
+    </div>
     </section>
   </main>
 
