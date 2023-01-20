@@ -1,25 +1,110 @@
 .hero {
-  margin-bottom: 30px;
+  background-color: $light-grey;
+  background-image: url("../img/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: -20px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/hero-tablet.jpg");
+    background-position-y: -20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/hero-desktop.jpg");
+    background-position-y: -20px;
+  }
+}
+
+.hero__title {
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  padding: 73px 5px 120px 5px;
+  text-align: center;
+  min-height: 60px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    min-height: 426px;
+    padding: 154px 50px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    max-width: 730px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .hero__list {
   padding: 0;
   margin: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 .hero__link {
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
-  color: #ffffff;
+  color: $basic-white;
   padding: 24px 30px 30px;
   display: block;
-  background: #63d1bb;
+  background: $basic-green;
   text-decoration: none;
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 60px;
+    width: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 28px;
+    opacity: 0.5;
+  }
+
+  &--interior::after {
+    background-image: url("../img/icons/interior.svg");
+  }
+
+  &--toys::after {
+    background-image: url("../img/icons/toys.svg");
+  }
+
+  &--toys {
+    background-color: $darken-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 35px 35px 35px;
+  }
 }
 
 .hero__link-text {
   width: 150px;
   display: block;
+}
+
+.hero__item {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

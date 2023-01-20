@@ -1,0 +1,27 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 18px;
+  padding: 22px 0;
+  align-items: center;
+}
+
+.copyright__text {
+  margin: auto 0;
+  padding-right: 27px;
+}
+
+.copyright__link {
+  color: $basic-green;
+
+  &:hover,
+  &:focus {
+    color: $hover-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

@@ -2,10 +2,27 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  padding-top: 25px;
-  padding-bottom: 28px;
   border-bottom: 1px solid #e5e5e5;
   display: flex;
   column-gap: 30px;
   justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    align-items: baseline;
+  }
+}
+
+.social__item {
+  margin: auto 0;
+}
+
+.social__link {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  align-items: center;
 }
