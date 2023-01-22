@@ -98,14 +98,14 @@
   margin: 0;
   border-bottom: 1px solid $border-color;
   display: grid;
-  grid-template-columns: 100px 160px;
+  grid-template-columns: 60px 160px;
   padding: 10px 0;
 }
 
 .featured__image {
   max-width: none;
   margin: 0 auto;
-  margin-bottom: 26px;
+  margin-bottom: 5px;
 }
 
 .featured__image-wrapper {
@@ -126,6 +126,9 @@
   line-height: 24px;
   font-weight: 700;
   text-align: center;
+  margin: 0;
+  margin-bottom: 25px;
+  margin-top: 15px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
