@@ -1,6 +1,6 @@
 .stats {
-  margin-top: 36px;
-  margin-bottom: 58px;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 .stats__title {
@@ -8,6 +8,7 @@
   font-size: 25px;
   line-height: 30px;
   color: #000000;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;

@@ -1,3 +1,44 @@
+.video {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+    max-width: 682px;
+  }
+}
+
+.video__img {
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
 .video__container {
   display: flex;
+}
+
+.video__button {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  padding: 0;
+  outline: none;
+  font-family: inherit;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &:hover,
+  &:focus {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.9;
+  }
 }
