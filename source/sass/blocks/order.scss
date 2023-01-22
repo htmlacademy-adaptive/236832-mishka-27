@@ -4,12 +4,18 @@
   padding-bottom: 55px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 70px;
     padding-bottom: 48px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 122px;
+  }
+}
+
+.wrapper .order__description {
+  @media (min-width: $desktop-width) {
+    padding-right: 230px;
+    padding-left: 230px;
   }
 }
 
@@ -31,4 +37,43 @@
   font-size: 14px;
   line-height: 16px;
   color: $extra-dark;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+.order-form__confirm-button {
+  .form__button {
+    width: 100%;
+
+    @media (min-width: $tablet-width) {
+      width: auto;
+      padding: 14px 25px;
+    }
+  }
+}
+
+.order-form__button-container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.order-form__button-container .button {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+    padding: 14px 25px;
+    order: -1;
+    margin: 0;
+  }
 }

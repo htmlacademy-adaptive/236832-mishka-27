@@ -1,0 +1,5 @@
+.color-wrapper {
+  @media (min-width: $tablet-width) {
+    background-color: $grey;
+  }
+}

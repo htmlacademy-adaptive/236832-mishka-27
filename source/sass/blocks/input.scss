@@ -1,0 +1,27 @@
+.input {
+  font: inherit;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  color: $extra-dark;
+  outline: none;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  &::placeholder {
+    font: inherit;
+    color: $extra-dark;
+    opacity: 0.3;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $basic-green;
+  }
+}
