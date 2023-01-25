@@ -1,3 +1,71 @@
 .main-header {
   padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.main-header__logo {
+  display: block;
+  flex-basis: 50%;
+  padding: 22px 0;
+  outline: none;
+  width: max-content;
+  margin-right: auto;
+  margin-left: auto;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    flex-basis: 45%;
+    padding: 34px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 0;
+    flex-basis: 150px;
+  }
+}
+
+.main-header__logo-image {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 0 0;
+    width: 113px;
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
+  }
+}
+
+.main-header__note {
+  display: none;
+  margin: 0;
+  order: 4;
+  font-size: 15px;
+  line-height: 24px;
+  color: $extra-dark;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    right: 50px;
+    bottom: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 31px;
+  }
 }
