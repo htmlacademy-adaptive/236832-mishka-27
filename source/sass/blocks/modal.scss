@@ -1,0 +1,104 @@
+.modal {
+  background-color: rgba($basic-white, 0.9);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.modal__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 28px;
+  padding-right: 30px;
+  padding-bottom: 45px;
+  padding-left: 30px;
+  border: 1px solid $modal-border;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  background-color: $basic-white;
+
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    padding-top: 35px;
+    padding-right: 108px;
+    padding-left: 108px;
+    width: 376px;
+  }
+}
+
+.modal__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 15px;
+  width: 175px;
+}
+
+.modal__note {
+  color: $extra-dark;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.modal__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  color: $extra-dark;
+}
+
+.modal__size {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 18px 42px;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid rgba($extra-dark, 0.1);
+
+  &:hover {
+    border: 2px solid rgba($extra-dark, 0.3);
+  }
+
+  &:active {
+    border: 2px solid $basic-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 52px;
+  }
+}
+
+.modal__input:checked + .modal__size {
+  border: 2px solid $basic-green;
+}
+
+.modal__button {
+  border: none;
+  width: 100%;
+  background-color: $basic-green;
+  color: $basic-white;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 16px;
+}

@@ -327,6 +327,28 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal hidden">
+    <form class="modal__wrapper" action="https://echo.htmlacademy.ru" method="POST">
+      <h3 class="modal__title">Добавить в&nbsp;корзину</h3>
+      <p class="modal__note">Выберите размер:</p>
+      <ul class="modal__list">
+        <li class="modal__list-item">
+          <input class="modal__input visually-hidden" id="size-s" type="radio" value="s" name="size" checked>
+          <label class="modal__size" for="size-s">s</label>
+        </li>
+        <li class="modal__list-item">
+          <input class="modal__input visually-hidden" id="size-m" type="radio" value="m" name="size">
+          <label class="modal__size" for="size-m">m</label>
+        </li>
+        <li class="modal__list-item">
+          <input class="modal__input visually-hidden" id="size-l" type="radio" value="l" name="size">
+          <label class="modal__size" for="size-l">l</label>
+        </li>
+      </ul>
+      <button class="modal__button button" type="submit">Добавить</button>
+    </form>
+  </div>
 </body>
 
 </html>
