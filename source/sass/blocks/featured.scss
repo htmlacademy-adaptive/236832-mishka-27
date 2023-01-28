@@ -115,7 +115,7 @@
 
 .featured__list {
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
   font-size: 15px;
   line-height: 20px;
 
@@ -136,7 +136,7 @@
   margin: 0;
   border-bottom: 1px solid $border-color;
   display: grid;
-  grid-template-columns: 55px 160px;
+  grid-template-columns: 60px 160px;
   padding: 10px 0;
 }
 
@@ -170,8 +170,8 @@
   font-weight: 700;
   text-align: center;
   margin: 0;
-  margin-bottom: 25px;
-  margin-top: 15px;
+  margin-bottom: 28px;
+  margin-top: 16px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

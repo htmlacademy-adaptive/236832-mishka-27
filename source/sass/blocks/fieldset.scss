@@ -181,12 +181,19 @@
   top: 55%;
   transform: translateY(-50%);
   margin-right: 10px;
-  opacity: 0.8;
+  opacity: 0.2;
+  transition: color $transition-duration, opacity $transition-duration;
 
   @media (min-width: $tablet-width) {
     grid-column: 2/3;
     top: 37%;
   }
+}
+
+.input:hover + .fieldset__item-icon,
+.input:focus + .fieldset__item-icon {
+  color: $basic-green;
+  opacity: 1;
 }
 
 .fieldset textarea {

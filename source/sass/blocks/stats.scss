@@ -1,6 +1,9 @@
 .stats {
-  margin-top: 70px;
-  margin-bottom: 70px;
+  background-image: url("../img/zigzag-line.svg");
+  padding-top: 36px;
+  padding-bottom: 26px;
+  background-repeat: repeat-x;
+  background-size: auto 6px;
 }
 
 .stats__title {
@@ -83,25 +86,25 @@
 }
 
 .stats__item--materials::before {
-  background-image: url("../../img/icons/stats-icons/stats-materials.svg");
+  background-image: url("../img/icons/stats-materials.svg");
 }
 
 .stats__item--price::before {
-  background-image: url("../../img/icons/stats-icons/stats-price.svg");
+  background-image: url("../img/icons/stats-price.svg");
 }
 
 .stats__item--like::before {
-  background-image: url("../../img/icons/stats-icons/stats-likes.svg");
+  background-image: url("../img/icons/stats-likes.svg");
 }
 
 .stats__item--made::before {
-  background-image: url("../../img/icons/stats-icons/stats-made.svg");
+  background-image: url("../img/icons/stats-made.svg");
 }
 
 .stats__item--present::before {
-  background-image: url("../../img/icons/stats-icons/stats-present.svg");
+  background-image: url("../img/icons/stats-present.svg");
 }
 
 .stats__item--support::before {
-  background-image: url("../../img/icons/stats-icons/stats-support.svg");
+  background-image: url("../img/icons/stats-support.svg");
 }
