@@ -1,9 +1,19 @@
 .stats {
   background-image: url("../img/zigzag-line.svg");
-  padding-top: 36px;
-  padding-bottom: 26px;
+  padding-top: 16px;
+  padding-bottom: 27px;
   background-repeat: repeat-x;
   background-size: auto 6px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 36px;
+    background-size: auto 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 50px;
+    background-size: auto 23px;
+  }
 }
 
 .stats__title {
@@ -21,7 +31,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
-    padding-left: 225px;
+    padding-left: 175px;
   }
 }
 
@@ -37,10 +47,13 @@
     line-height: 22px;
     display: flex;
     flex-wrap: wrap;
+    column-gap: 70px;
+    row-gap: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 225px;
+    padding-left: 175px;
+    column-gap: 84px;
   }
 }
 
@@ -49,18 +62,25 @@
   font-size: 17px;
   line-height: 20px;
 
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   max-width: 245px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+    max-width: 265px;
+    margin-bottom: 60px;
+  }
 
   &::before {
     content: "";
     width: 55px;
-    height: 38px;
+    height: 36px;
     background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
     margin-left: -4px;
-    margin-bottom: 16px;
+    margin-bottom: 17px;
     display: block;
   }
 

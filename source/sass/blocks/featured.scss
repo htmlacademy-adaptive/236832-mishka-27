@@ -1,21 +1,22 @@
 .featured {
   padding-top: 30px;
+  padding-bottom: 34px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 53px;
+    padding-top: 44px;
     padding-bottom: 50px;
 
     display: grid;
     grid-template-columns: auto auto 1fr;
-    grid-template-rows: 85px 130px 165px 70px;
+    grid-template-rows: 85px 130px 160px 76px;
     column-gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 150px 320px 60px 525px;
-    padding-top: 70px;
+    grid-template-columns: 146px 320px 60px 525px;
+    padding-top: 63px;
     padding-bottom: 76px;
-    grid-template-rows: 155px 10px 130px 218px 73px;
+    grid-template-rows: 154px 10px 130px 212px 76px;
   }
 }
 
@@ -66,9 +67,10 @@
     font-weight: 700;
     font-size: 17px;
     line-height: 17px;
-    margin-left: 200px;
+    margin-left: 218px;
     max-width: 80px;
     text-align: center;
+    margin-top: 4px;
 
     grid-row-start: 1;
     grid-column-start: 2;
@@ -136,14 +138,19 @@
   margin: 0;
   border-bottom: 1px solid $border-color;
   display: grid;
-  grid-template-columns: 60px 160px;
+  grid-template-columns: 58px 160px;
   padding: 10px 0;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 57px 160px;
+    padding: 9px 0;
+  }
 }
 
 .featured__image {
   max-width: none;
   margin: 0 auto;
-  margin-top: 15px;
+  margin-top: 8px;
 }
 
 .featured__image-wrapper {
@@ -170,8 +177,8 @@
   font-weight: 700;
   text-align: center;
   margin: 0;
-  margin-bottom: 28px;
-  margin-top: 16px;
+  margin-bottom: 26px;
+  margin-top: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
