@@ -4,15 +4,18 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    padding-top: 50px;
-    padding-bottom: 27px;
+    padding-top: 33px;
     margin: 0;
     align-items: flex-start;
     width: auto;
     display: grid;
     grid-template-columns: 147px 1fr;
     column-gap: 20px;
-    margin-bottom: 56px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 50px;
   }
 }
 
@@ -22,11 +25,11 @@
   }
 }
 
-.order-form__fieldset.additional {
+.order__form-fieldset.additional {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 100px 1fr;
-    padding-left: 110px;
-    padding-right: 120px;
+    grid-template-columns: 43px 1fr;
+    padding-left: 60px;
+    padding-right: 160px;
   }
 }

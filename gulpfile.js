@@ -69,9 +69,9 @@ const server = (done) => {
 // Reload
 
 const reload = done => {
-  sync.reload();
+  browser.reload();
   done();
-  }
+}
 
 // Images
 
@@ -143,13 +143,14 @@ const clean = () => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/less/**/*.less", gulp.series(styles));
+  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
   gulp.watch("source/js/script.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
-  }
+  gulp.watch('source/img/icon-*.svg', gulp.series(sprite));
+}
 
 
-const build = gulp.series(
+export const build = gulp.series(
   clean,
   copy,
   optimizeImages,
@@ -172,8 +173,8 @@ export default gulp.series(
     svg,
     sprite,
     createWebp
-),
-gulp.series(
-  server,
-  watcher,
-));
+  ),
+  gulp.series(
+    server,
+    watcher,
+  ));

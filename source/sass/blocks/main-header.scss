@@ -9,7 +9,7 @@
   flex-basis: 50%;
   padding: 22px 0;
   outline: none;
-  width: max-content;
+  width: 85px;
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 18px;
@@ -25,13 +25,17 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    flex-basis: 45%;
-    padding: 34px 0;
+    flex-basis: 47%;
+    padding: 19px 0;
+    width: 113px;
+    height: 46px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 10px 0;
-    flex-basis: 150px;
+    flex-basis: 220px;
+    width: 113px;
+    height: 46px;
   }
 }
 
@@ -40,8 +44,6 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto 0 0;
-    width: 113px;
-    height: 46px;
   }
 
   @media (min-width: $desktop-width) {
@@ -67,6 +69,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 31px;
+    bottom: 28px;
   }
 }

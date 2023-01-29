@@ -5,7 +5,7 @@
   font-size: 27px;
   line-height: 30px;
   background-color: $grey;
-  min-height: 176px;
+  min-height: 135px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,9 +16,10 @@
     padding-top: 50px;
     font-size: 43px;
     line-height: 50px;
-    min-height: 222px;
+    min-height: 145px;
     border-top: 1px solid $border-color;
     margin-top: -71px;
+    padding-bottom: 35px;
 
     &::after {
       content: "";
@@ -34,7 +35,8 @@
   @media (min-width: $desktop-width) {
     font-size: 53px;
     padding-top: 32px;
-    min-height: 249px;
+    min-height: 195px;
+    padding-bottom: 43px;
 
     &::after {
       content: "";

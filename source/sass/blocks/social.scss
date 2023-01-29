@@ -4,11 +4,11 @@
   list-style: none;
   border-bottom: 1px solid #e5e5e5;
   display: flex;
-  column-gap: 30px;
+  column-gap: 27px;
   justify-content: center;
   align-items: center;
-  padding-top: 30px;
-  padding-bottom: 32px;
+  padding-top: 26px;
+  padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     border: none;
@@ -25,4 +25,13 @@
   width: 30px;
   height: 30px;
   align-items: center;
+
+  &:hover,
+  &:focus {
+    color: $hover-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

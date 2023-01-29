@@ -43,6 +43,12 @@
     padding-left: 42px;
     border: 1px solid $grey;
     border-bottom: none;
+
+    &::before {
+      content: url("../img/catalog-video-icon.svg");
+      display: block;
+      margin-right: 32px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -70,7 +76,7 @@
   line-height: 24px;
   color: $extra-dark;
   margin: 0;
-  margin-bottom: 41px;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
@@ -86,7 +92,7 @@
 }
 
 .blog__button {
-  padding: 18px 21px;
+  padding: 15px 21px;
   margin: 0 auto;
 
   @media (min-width: $desktop-width) {
@@ -94,7 +100,7 @@
   }
 }
 
-.blog_text-wrapper {
+.blog__text-wrapper {
   border: 1px solid $border-color;
   margin-bottom: 58px;
   padding-top: 35px;
@@ -118,6 +124,10 @@
 
 .blog .blog__button {
   margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
 
   @media (min-width: $desktop-width) {
     height: 15px;
