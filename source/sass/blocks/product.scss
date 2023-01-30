@@ -144,4 +144,10 @@
   padding-top: 21px;
   border-top: 1px solid $border-color;
   margin-top: auto;
+
+  @media (min-width: $desktop-width) {
+    &:last-child {
+      padding-top: 14px;
+    }
+  }
 }
