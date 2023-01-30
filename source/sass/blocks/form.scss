@@ -1,0 +1,57 @@
+.form__element {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 115px 1fr;
+    column-gap: 53px;
+    padding: 11px 0 38px;
+  }
+
+  &--radio {
+    @media (min-width: $tablet-width) {
+      padding: 24px 0 0 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 44px 0 15px 0;
+    }
+  }
+
+  &--checkbox {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 115px 1fr;
+      column-gap: 53px;
+      padding: 50px 0 15px 0;
+    }
+  }
+
+  &--name {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 115px 1fr;
+      column-gap: 53px;
+      padding: 50px 0 0;
+    }
+  }
+
+  &--tel {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 115px 1fr;
+      column-gap: 53px;
+      padding: 30px 0 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 60px 1fr;
+    padding: 35px 0 19px;
+    column-gap: 55px;
+  }
+}
+
+.form__element.wrapper {
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+  }
+}
