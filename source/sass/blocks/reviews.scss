@@ -6,7 +6,7 @@
     padding-bottom: 21px;
     display: grid;
     grid-template-columns: 260px 235px 200px;
-    grid-template-rows: 55px 88px 120px 150px;
+    grid-template-rows: 52px 91px 120px 150px;
     align-items: start;
     margin-bottom: 67px;
 
@@ -57,7 +57,7 @@
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
-    padding-left: 115px;
+    padding-left: 135px;
 
     grid-row: 2/3;
     grid-column: 1/2;
@@ -107,7 +107,8 @@
   @media (min-width: $desktop-width) {
     grid-row: 3/4;
     grid-column: 1/4;
-    margin-left: 115px;
+    padding-left: 137px;
+    padding-right: 46px;
   }
 }
 
@@ -119,11 +120,12 @@
   font-style: normal;
 
   @media (min-width: $tablet-width) {
-    font-size: 17px;
+    font-size: 18px;
   }
 
   @media (min-width: $desktop-width) {
     grid-row: 3/4;
+    font-size: 17px;
   }
 }
 
@@ -153,6 +155,10 @@
     margin-right: 30px;
     margin-top: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 25px;
+  }
 }
 
 .reviews__button {
@@ -167,6 +173,12 @@
 
     grid-row: 2/3;
     grid-column: 3/4;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 25px;
+    margin-right: 0;
+    padding: 13px 85px;
   }
 }
 

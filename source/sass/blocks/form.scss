@@ -6,41 +6,11 @@
     padding: 11px 0 38px;
   }
 
-  &--radio {
-    @media (min-width: $tablet-width) {
-      padding: 24px 0 0 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 44px 0 15px 0;
-    }
-  }
-
-  &--checkbox {
-    @media (min-width: $tablet-width) {
-      display: grid;
-      grid-template-columns: 115px 1fr;
-      column-gap: 53px;
-      padding: 50px 0 15px 0;
-    }
-  }
-
-  &--name {
-    @media (min-width: $tablet-width) {
-      display: grid;
-      grid-template-columns: 115px 1fr;
-      column-gap: 53px;
-      padding: 50px 0 0;
-    }
-  }
-
-  &--tel {
-    @media (min-width: $tablet-width) {
-      display: grid;
-      grid-template-columns: 115px 1fr;
-      column-gap: 53px;
-      padding: 30px 0 0;
-    }
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 115px 1fr;
+    column-gap: 53px;
+    padding: 11px 0 38px;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,5 +23,66 @@
 .form__element.wrapper {
   @media (min-width: $desktop-width) {
     padding-left: 110px;
+  }
+}
+
+.form__element--radio {
+  @media (min-width: $tablet-width) {
+    padding: 24px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 48px 0 0;
+  }
+}
+
+.form__element--checkbox {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 115px 1fr;
+    column-gap: 53px;
+    padding: 50px 0 15px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 58px 1fr;
+    column-gap: 53px;
+    padding: 46px 0 13px;
+  }
+}
+
+.form__element--name {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 115px 1fr;
+    column-gap: 53px;
+    padding: 50px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 58px 1fr;
+    column-gap: 60px;
+    padding: 50px 0 0;
+  }
+}
+
+
+.form__element--tel {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 115px 1fr;
+    column-gap: 53px;
+    padding: 30px 0 0;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 58px 1fr;
+    column-gap: 60px;
+    padding: 40px 0 0;
+    padding-bottom: 50px;
   }
 }
