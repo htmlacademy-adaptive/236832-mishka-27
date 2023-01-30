@@ -1,0 +1,17 @@
+.checkbox .fieldset__label {
+  @media (min-width: $tablet-width) {
+    column-gap: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 0;
+  }
+}
+
+.checkbox .fieldset__item {
+  padding-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 10px;
+  }
+}

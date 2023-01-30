@@ -1,7 +1,7 @@
 .order {
   padding: 0;
   padding-top: 17px;
-  padding-bottom: 55px;
+  padding-bottom: 50px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 48px;
@@ -10,14 +10,6 @@
   @media (min-width: $desktop-width) {
     padding-top: 56px;
     padding-bottom: 54px;
-  }
-}
-
-.wrapper .order__description {
-  @media (min-width: $desktop-width) {
-    padding-right: 230px;
-    padding-left: 175px;
-    width: 700px;
   }
 }
 
@@ -32,7 +24,7 @@
     font-size: 17px;
     line-height: 30px;
     margin-bottom: 36px;
-    margin-top: 45px;
+    margin-top: 41px;
   }
 
   @media (min-width: $desktop-width) {
